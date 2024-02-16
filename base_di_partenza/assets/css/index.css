@@ -39,7 +39,8 @@ nav {
 }
 
 .stay {
-  /* gap: 28rem; */
+  max-width: 1200;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,9 +72,10 @@ nav {
   margin-left: auto;
 }
 .left {
+  padding-right: 5rem;
+  max-width: 1200;
   text-align: left;
   margin-left: auto;
-  padding-right: 5rem;
 }
 /**--------------------------------------section */
 
@@ -218,45 +220,63 @@ footer {
 footer a {
   color: grey;
 }
-@media screen and (max-width:1024px) {
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+  .left {
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 16.9px;
+  }
+  .stay img {
+    max-width: 96%;
+  }
+  .stay h1 {
+    font-size: 76px;
+  }
+  .first-section {
+    padding-left: 16.9px;
+  }
+  .container-cards2{
+    padding-left: 16.9px;
+
+  }
+}
+@media screen and (max-width: 1024px) {
   .div-navbar {
     margin-inline: 3rem;
   }
-  .stay{
+  .stay {
     flex-wrap: nowrap;
   }
-  .left{
+  .left {
     padding-right: 0px;
   }
-  .stay h1{
+  .stay h1 {
     font-size: 67px;
     font-weight: 500;
   }
-  header{
+  header {
     padding-left: 3rem;
   }
-  .first-section{
+  .first-section {
     margin-left: 3rem;
   }
-  .card{
+  .card {
     width: 44%;
-
   }
-  .container-card{
+  .container-card {
     column-gap: 4rem;
     margin: auto;
   }
-  .second-section{
+  .second-section {
     padding-left: 3rem;
     gap: 0;
   }
-  .container-cards2{
+  .container-cards2 {
     max-width: 95%;
   }
-  .container{
+  .container {
     order: 1;
     max-width: 95%;
     padding-bottom: 1rem;
-   
   }
 }
