@@ -21,9 +21,13 @@ header {
   background-color: #ffc017;
   text-align: center;
   border-bottom: 1px solid black;
+  padding-top: 1rem;
+  height: 437px;
 }
 nav {
+  overflow: hidden;
   background-color: #ffc017;
+  transition: background-color 0.5s ease;
   width: 100%;
   border-bottom: 1px solid black;
   position: sticky;
@@ -70,7 +74,15 @@ nav {
   padding: 8px 20px;
 }
 .svg {
+  width: 585px;
+  height: 462px;
   margin-left: auto;
+  position: relative;
+}
+.svg svg {
+  position: absolute;
+  right: 0;
+  top: -16px;
 }
 .left {
   padding-right: 5rem;
@@ -241,24 +253,39 @@ footer a {
   }
 }
 @media screen and (max-width: 1024px) {
+  .svg {
+    width: 585px;
+    height: 462px;
+    position: absolute;
+    left: 485px;
+  }
   .div-navbar {
-    margin-inline: 3rem;
+    margin-inline: 64px;
+    padding: 16.9px 0px;
   }
   .svg {
     overflow: hidden;
   }
   .stay {
+    height: 100%;
+    justify-content: start;
+    align-items: center;
     flex-wrap: nowrap;
   }
   .left {
     padding-right: 0px;
+    margin-left: 0px;
   }
   .stay h1 {
-    font-size: 67px;
+    font-size: 88px;
     font-weight: 500;
   }
   header {
-    padding-left: 3rem;
+    overflow: hidden;
+    padding-left: 64px;
+    position: relative;
+    height: 437px;
+    padding-top: 1rem;
   }
   .first-section {
     margin-left: 3rem;
@@ -271,11 +298,12 @@ footer a {
     margin: auto;
   }
   .second-section {
-    padding-left: 3rem;
+    padding-left: 64px;
     gap: 0;
   }
   .container-cards2 {
     max-width: 95%;
+    padding-bottom: 1rem;
   }
   .container {
     order: 1;
@@ -287,6 +315,12 @@ footer a {
   .menu-nav a {
     display: none;
   }
+  header{
+    height: unset;
+  }
+.treding{
+  font-size: 13px;
+}
   .menu-nav {
     display: flex;
     align-items: center;
@@ -353,14 +387,13 @@ footer a {
     padding-top: 0px;
   }
   .second-section {
-    width: 100%;
     padding-top: 2rem;
     padding-left: 16.9px;
   }
   .container {
     order: -1;
     flex-grow: 1;
-    top: 50px;
+    top: 49px;
   }
   .a-container {
     padding: 1.2rem 0rem 1.8rem 0rem;
@@ -385,12 +418,12 @@ footer a {
     font-size: 18px;
   }
   .card2 > div img {
-    width:20px ;
+    width: 20px;
   }
-  .card2 span{
+  .card2 span {
     font-size: 13px;
   }
-  .card2 img{
+  .card2 img {
     /* object-fit: cover; */
   }
 }
