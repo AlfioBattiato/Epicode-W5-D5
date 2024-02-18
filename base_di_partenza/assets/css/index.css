@@ -311,7 +311,7 @@ footer a {
     padding-bottom: 1rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .menu-nav a {
     display: none;
   }
